@@ -1,0 +1,117 @@
+<!----Dice Game
+Roll 2 dice and ask the user to predict the the number on the dice.
+If they are right then show an animation for correct answer on 1 dice.
+A different animation on correct answer on both the dice------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+    <div class="container">
+        <div class="dice-wrapper">
+            <img  id="die-1">
+            <img  id="die-2">
+        </div>
+        <p id="total"></p>
+        <button onclick="roll()">ROLL THE DICE</button>
+        
+    </div>
+    
+    
+    <div class="center">
+        <input type="checkbox" id="show">
+        <label for="show" class="show-btn">Guess</label>
+        <div class="container_1">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+            <h3>Guess Game</h3>
+
+            <input type="text" placeholder="Num" id="guess"><br>
+            <button class="invert" onclick="play1()" id="my_btn1">GUESS</button>
+
+            <p id="message1"></p>
+
+            <input type="text" placeholder="Num" id="guess2"><br>
+            <button class="invert" onclick="play2()" id="my_btn2">GUESS</button>
+
+            <p id="message2"></p>
+        </div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
